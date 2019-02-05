@@ -43,7 +43,26 @@ func SelfIncreatment(_ num: inout Int, _ addpart: Int){
     num += addpart
     let result = num
     print("\(old) += \(addpart) -> \(result)")
+    
 }
+
+//function as argument
+func ClickRunBtn(isCompiledOk: Bool, callback: (Bool)->Void){
+    print("you have clicked run button")
+    callback(isCompiledOk)
+}
+
+func OnBtnRunClick(isCompileOk: Bool){
+    if isCompileOk{
+        print("everything is allright, success.")
+    }
+    else
+    {
+        print("compile error, failed!")
+    }
+}
+
+
 
 Foo()
 Add(lhs:1, rhs:2) //call function with parameter lable
@@ -69,3 +88,8 @@ SelfIncreatment(&num, 10)
 num
 SelfDecrement(num, 10)
 num
+
+
+//function as argument
+ClickRunBtn(isCompiledOk: true, callback: OnBtnRunClick)
+ClickRunBtn(isCompiledOk: false, callback: OnBtnRunClick)
