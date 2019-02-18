@@ -1,24 +1,31 @@
 import Foundation
 
 var x: Int = 0
+var y: Int? = nil
+var age: Int? = nil
+var name: String? = nil
+var unwrapName: String = name ?? "empty"
+
 //x = nil -error
 x = 10
 print(x)
 
-
-var y: Int? = nil
 y = 10
 print(y)
-
 //unwrap optional vaeiable
 print(y!)
 
-var name: String? = nil
+
+//print(name!) -can't unwrap a nil optional
+print(unwrapName)
+
 name = "yanshuyu"
+unwrapName = name ?? "empty"
+
 print(name)
 print(name!)
+print(unwrapName)
 
-var age: Int? = nil
 
 
 //if let unwrap optional variable
