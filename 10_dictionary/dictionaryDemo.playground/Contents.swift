@@ -45,3 +45,14 @@ for (countryCode,country) in countries{
     print("\(countryCode):\(country)", terminator: ", ")
 }
 print(" }")
+
+//reduce function
+var keys = countries.reduce("", { return $0 + "、" + $1.key})
+var vals = countries.reduce("", { return $0 + "、" + $1.value})
+print("keys: \(keys)")
+print("values: \(vals)")
+
+
+//filter function
+var countryCodeContainS = countries.filter({ return $0.key.contains("S") })
+print("country code contain S: \(countryCodeContainS)")

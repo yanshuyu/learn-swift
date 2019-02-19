@@ -3,22 +3,67 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=5&amp;CharacterRangeLoc=128&amp;EndingColumnNumber=10&amp;EndingLineNumber=5&amp;StartingColumnNumber=5&amp;StartingLineNumber=5&amp;Timestamp=572197313.307086"
+         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=5&amp;CharacterRangeLoc=128&amp;EndingColumnNumber=10&amp;EndingLineNumber=5&amp;StartingColumnNumber=5&amp;StartingLineNumber=5&amp;Timestamp=572241765.844965"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=5&amp;CharacterRangeLoc=49&amp;EndingColumnNumber=10&amp;EndingLineNumber=3&amp;StartingColumnNumber=5&amp;StartingLineNumber=3&amp;Timestamp=572197313.307355"
+         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=5&amp;CharacterRangeLoc=49&amp;EndingColumnNumber=10&amp;EndingLineNumber=3&amp;StartingColumnNumber=5&amp;StartingLineNumber=3&amp;Timestamp=572241765.845078"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=5&amp;CharacterRangeLoc=90&amp;EndingColumnNumber=10&amp;EndingLineNumber=4&amp;StartingColumnNumber=5&amp;StartingLineNumber=4&amp;Timestamp=572197313.307564"
+         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=5&amp;CharacterRangeLoc=90&amp;EndingColumnNumber=10&amp;EndingLineNumber=4&amp;StartingColumnNumber=5&amp;StartingLineNumber=4&amp;Timestamp=572241765.84516"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=9&amp;CharacterRangeLoc=183&amp;EndingColumnNumber=14&amp;EndingLineNumber=7&amp;StartingColumnNumber=5&amp;StartingLineNumber=7&amp;Timestamp=572197313.307762"
+         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=9&amp;CharacterRangeLoc=183&amp;EndingColumnNumber=14&amp;EndingLineNumber=7&amp;StartingColumnNumber=5&amp;StartingLineNumber=7&amp;Timestamp=572241765.845239"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=32&amp;CharacterRangeLoc=282&amp;EndingColumnNumber=0&amp;EndingLineNumber=11&amp;StartingColumnNumber=1&amp;StartingLineNumber=10&amp;Timestamp=572241765.845315"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=34&amp;CharacterRangeLoc=315&amp;EndingColumnNumber=0&amp;EndingLineNumber=12&amp;StartingColumnNumber=1&amp;StartingLineNumber=11&amp;Timestamp=572241765.8453929"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=32&amp;CharacterRangeLoc=350&amp;EndingColumnNumber=0&amp;EndingLineNumber=13&amp;StartingColumnNumber=1&amp;StartingLineNumber=12&amp;Timestamp=572241765.845467"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=36&amp;CharacterRangeLoc=383&amp;EndingColumnNumber=0&amp;EndingLineNumber=14&amp;StartingColumnNumber=1&amp;StartingLineNumber=13&amp;Timestamp=572241765.84554"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=20&amp;CharacterRangeLoc=487&amp;EndingColumnNumber=0&amp;EndingLineNumber=18&amp;StartingColumnNumber=1&amp;StartingLineNumber=17&amp;Timestamp=572241765.845614"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=33&amp;CharacterRangeLoc=508&amp;EndingColumnNumber=0&amp;EndingLineNumber=19&amp;StartingColumnNumber=1&amp;StartingLineNumber=18&amp;Timestamp=572241765.845688"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=22&amp;CharacterRangeLoc=1408&amp;EndingColumnNumber=0&amp;EndingLineNumber=52&amp;StartingColumnNumber=1&amp;StartingLineNumber=51&amp;Timestamp=572241765.845763"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=176&amp;CharacterRangeLoc=1431&amp;EndingColumnNumber=0&amp;EndingLineNumber=58&amp;StartingColumnNumber=1&amp;StartingLineNumber=52&amp;Timestamp=572241765.845837"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/sy/Documents/learn-switf/10_dictionary/dictionaryDemo.playground#CharacterRangeLen=55&amp;CharacterRangeLoc=1552&amp;EndingColumnNumber=0&amp;EndingLineNumber=58&amp;StartingColumnNumber=1&amp;StartingLineNumber=57&amp;Timestamp=572241765.845925"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
