@@ -6,6 +6,22 @@ var floatNumbers = [Float]()
 var months = [String](repeating: "January", count: 12)
 var days = ["Monday", "Tuesday","Thursday"]
 
+func getAddResultOfArray(_ interges: [Int]) -> Int {
+    var reslut = 0
+    for number in intergers {
+        reslut += number
+    }
+    return reslut
+}
+
+func getMultiplicationOfArray(intergers: [Int]) -> Int{
+    var result = 1
+    for number in intergers{
+        result *= number
+    }
+    return result
+}
+
 //accessing array
 print("days: \(days)")
 print("count: \(days.count)")
@@ -66,3 +82,20 @@ for (idx, day) in days.enumerated() {
 }
 
 
+//reduce function
+intergers = [1,2,3,4,5,6,7,8,9]
+print("result of getAddResultOfArray: \(getAddResultOfArray(intergers))")
+print("result of reduce + : \(intergers.reduce(0, { return $0 + $1}))")
+
+print("result of getMultiplicationOfArray: \(getMultiplicationOfArray(intergers: intergers))")
+print("result of reduce * : \(intergers.reduce(1, {return $0 * $1}))")
+
+//filter function
+var evens = intergers.filter({(number: Int) -> Bool in
+    return number % 2 == 0
+})
+print("evens in integers: \(evens)")
+
+//map function
+print("result of map *2 : \(intergers.map({(number: Int) -> Int in  return number * 2}))")
+print("integers: \(intergers)")
