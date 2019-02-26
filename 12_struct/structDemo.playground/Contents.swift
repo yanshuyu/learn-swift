@@ -80,6 +80,19 @@ extension Student {
 }
 
 
+struct Position {
+    //    stored property
+    var x: Float
+    var y: Float
+    var z: Float
+    //    computed property
+    //    computed property must be variable and must specify data type,
+    //    computed propety do not store value and they simply calculate a value and return it
+    var distance: Float {
+        return sqrt( x*x + y*y + z*z )
+    }
+}
+
 
 
 var p1 = Person()
@@ -98,3 +111,9 @@ print("s2 isMale: \(s2.person.isMale())")
 s2.setSchool(school: "GUET University")
 s2.setGrade(grade: 13)
 print(s2)
+
+var pos = Position(x: 2, y: 4, z: 8)
+print("\(pos), distance: \(pos.distance)")
+pos.x += 10
+print("\(pos), distance: \(pos.distance)")
+// pos.distance = 100 error: read only
