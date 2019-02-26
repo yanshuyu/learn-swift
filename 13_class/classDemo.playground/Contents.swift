@@ -165,20 +165,26 @@ class Node {
     weak var parent: Node? //cycle refrence
     weak var child: Node?
     
+    //static property
+    static var nodeCounter: Int = 0
+    
     init() {
         self.lable = ""
         self.parent = nil
         self.child = nil
+        Node.nodeCounter += 1
     }
     
     init(_ lable: String) {
         self.lable = lable
         self.parent = nil
         self.child = nil
+        Node.nodeCounter += 1
     }
     
     deinit {
         print("Node \"\(self.lable)\" is release.")
+        Node.nodeCounter -= 1
     }
     
     
@@ -323,9 +329,11 @@ else {
 //class instance life cycle
 var node_1: Node? = Node("node_1")
 var node_2: Node? = Node("node_2")
+print("total node count in memory: \(Node.nodeCounter)")
 node_1 = nil
 node_2 = nil
 
+print("total node count in memory: \(Node.nodeCounter)")
 var node_a: Node? = Node("node_a")
 var node_b: Node? = Node("node_b")
 print(node_a!.toString())
@@ -333,6 +341,9 @@ print(node_b!.toString())
 node_a!.addChild(node_b!)
 print(node_a!.toString())
 print(node_b!.toString())
+print("total node count in memory: \(Node.nodeCounter)")
+
 //it will lead to memory leak if recycle refrence are not weak refrence
 node_a = nil
 node_b = nil
+print("total node count in memory: \(Node.nodeCounter)")
