@@ -162,24 +162,22 @@ class VipBankAccout: BankAccount {
 //class instance life cycle
 class Node {
     var lable: String
-    weak var parent: Node? //cycle refrence
-    weak var child: Node?
+    weak var parent: Node? = nil //cycle refrence
+    weak var child: Node? = nil
     
     //static property
     static var nodeCounter: Int = 0
     
     init() {
         self.lable = ""
-        self.parent = nil
-        self.child = nil
         Node.nodeCounter += 1
+        print("Node \"\(self.lable)\"  is created.")
     }
     
     init(_ lable: String) {
         self.lable = lable
-        self.parent = nil
-        self.child = nil
         Node.nodeCounter += 1
+        print("Node \"\(self.lable)\"  is created.")
     }
     
     deinit {
@@ -189,29 +187,24 @@ class Node {
     
     
     func removeFromParent() -> Void {
-        if let unwrapParent = self.parent {
-            self.parent = nil
-            
-            if unwrapParent.getChild() != nil {
-                unwrapParent.child = nil
-            }
-        }
+        self.parent?.child = nil
+        self.parent = nil
     }
     
     
-    func addChild(_ child: Node) -> Void {
+    func addChild(_ child: Node?) -> Void {
         self.child?.removeFromParent()
-        child.removeFromParent()
+        child?.removeFromParent()
         self.child = child
-        child.parent = self
+        child?.parent = self
     }
     
     
-    func addTo(_ parent: Node) -> Void {
-       self.removeFromParent()
-       parent.child?.removeFromParent()
-       self.parent = parent
-       parent.child = self
+    func addTo(_ parent: Node?) -> Void {
+        parent?.child?.removeFromParent()
+        self.removeFromParent()
+        self.parent = parent
+        parent?.child = self
     }
     
     
@@ -225,8 +218,8 @@ class Node {
     }
     
     func toString() -> String {
-        let parentLable = self.parent != nil ? self.parent!.lable : "nil"
-        let childLable  = self.child != nil ? self.child!.lable : "nil"
+        let parentLable = self.parent?.lable ?? "nil"
+        let childLable  = self.child?.lable ?? "nil"
         return "Node(lable: \(self.lable), parent: \(parentLable), child: \(childLable))"
     }
 }
@@ -336,14 +329,21 @@ node_2 = nil
 print("total node count in memory: \(Node.nodeCounter)")
 var node_a: Node? = Node("node_a")
 var node_b: Node? = Node("node_b")
-print(node_a!.toString())
-print(node_b!.toString())
-node_a!.addChild(node_b!)
-print(node_a!.toString())
-print(node_b!.toString())
+print(node_a?.toString() ?? "")
+print(node_b?.toString() ?? "")
+node_a?.addChild(node_b)
+print(node_a?.toString() ?? "")
+print(node_b?.toString() ?? "")
 print("total node count in memory: \(Node.nodeCounter)")
 
 //it will lead to memory leak if recycle refrence are not weak refrence
+node_b?.removeFromParent()
+print(node_a?.toString() ?? "")
+print(node_b?.toString() ?? "")
+
 node_a = nil
 node_b = nil
+
+print(node_a?.toString() ?? "")
+print(node_b?.toString() ?? "")
 print("total node count in memory: \(Node.nodeCounter)")

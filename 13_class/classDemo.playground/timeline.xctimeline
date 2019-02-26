@@ -2,5 +2,15 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/sy/Documents/learn-switf/13_class/classDemo.playground#CharacterRangeLen=31&amp;CharacterRangeLoc=8602&amp;EndingColumnNumber=0&amp;EndingLineNumber=341&amp;StartingColumnNumber=1&amp;StartingLineNumber=340&amp;Timestamp=572888261.04711"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/sy/Documents/learn-switf/13_class/classDemo.playground#CharacterRangeLen=31&amp;CharacterRangeLoc=8634&amp;EndingColumnNumber=0&amp;EndingLineNumber=342&amp;StartingColumnNumber=1&amp;StartingLineNumber=341&amp;Timestamp=572888261.051298"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>
