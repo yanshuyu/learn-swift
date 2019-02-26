@@ -194,9 +194,7 @@ class Node {
     
     
     func addChild(_ child: Node) -> Void {
-        if let unwrapChild = self.child {
-            unwrapChild.removeFromParent()
-        }
+        self.child?.removeFromParent()
         child.removeFromParent()
         self.child = child
         child.parent = self
@@ -205,11 +203,9 @@ class Node {
     
     func addTo(_ parent: Node) -> Void {
        self.removeFromParent()
-        if let unwrapChild = parent.getChild() {
-            unwrapChild.removeFromParent()
-        }
-        self.parent = parent
-        parent.child = self
+       parent.child?.removeFromParent()
+       self.parent = parent
+       parent.child = self
     }
     
     
