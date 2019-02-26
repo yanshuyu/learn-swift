@@ -163,7 +163,7 @@ class VipBankAccout: BankAccount {
 class Node {
     var lable: String
     weak var parent: Node? = nil //cycle refrence
-    weak var child: Node? = nil
+    var child: Node? = nil
     
     //static property
     static var nodeCounter: Int = 0
@@ -181,8 +181,10 @@ class Node {
     }
     
     deinit {
-        print("Node \"\(self.lable)\" is release.")
         Node.nodeCounter -= 1
+        self.parent = nil
+        self.child = nil
+        print("Node \"\(self.lable)\" is release.")
     }
     
     
@@ -337,9 +339,9 @@ print(node_b?.toString() ?? "")
 print("total node count in memory: \(Node.nodeCounter)")
 
 //it will lead to memory leak if recycle refrence are not weak refrence
-node_b?.removeFromParent()
-print(node_a?.toString() ?? "")
-print(node_b?.toString() ?? "")
+//node_b?.removeFromParent()
+//print(node_a?.toString() ?? "")
+//print(node_b?.toString() ?? "")
 
 node_a = nil
 node_b = nil
