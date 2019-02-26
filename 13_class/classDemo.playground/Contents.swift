@@ -182,8 +182,6 @@ class Node {
     
     deinit {
         Node.nodeCounter -= 1
-        self.parent = nil
-        self.child = nil
         print("Node \"\(self.lable)\" is release.")
     }
     
