@@ -17,6 +17,18 @@ protocol PElectronicDevice {
     func toString() -> String
 }
 
+extension PElectronicDevice {
+    //provoid default implementation
+    func powerOn() -> Bool {
+        print("\(productName) device power on...")
+        return true
+    }
+    func powerOff() -> Bool {
+        print("\(productName) device power off...")
+        return true
+    }
+}
+
 protocol PWearableDevice {
     var isEletronic: Bool { get set }
     var weight: Float { get set }
@@ -104,15 +116,7 @@ class CIosDevice: PElectronicDevice {
         self.powerEnergy = power
         self.systemInfo = systemInfo
     }
-    func powerOn() -> Bool {
-        print("\(self.productName) device power on...")
-        return true
-    }
-    func powerOff() -> Bool {
-        print("\(self.productName) device power off...")
-        return true
-    }
-    func getSystemInfo() -> SystemInfo{
+    func getSystemInfo() -> SIosDeviceSystemInfo{
         return self.systemInfo
     }
     func toString() -> String {
@@ -141,15 +145,7 @@ class CMacDevice: PElectronicDevice {
         self.powerEnergy = power
         self.systemInfo = systemInfo
     }
-    func powerOn() -> Bool {
-        print("\(self.productName) power on...")
-        return true
-    }
-    func powerOff() -> Bool {
-        print("\(self.productName) power off...")
-        return true
-    }
-    func getSystemInfo() -> SystemInfo{
+    func getSystemInfo() -> SMacDeviceSystemInfo{
         return self.systemInfo
     }
     func toString() -> String {
@@ -189,19 +185,9 @@ class CSmartWatch: PElectronicDevice, PWearableDevice {
         self.wearBody = wearBody
     }
 
-    func powerOn() -> Bool
-    {
-        print("\(self.productName) power on...")
-        return true
-    }
-    func powerOff() -> Bool {
-        print("\(self.productName) power off...")
-        return true
-    }
-    func getSystemInfo() -> SystemInfo{
+    func getSystemInfo() -> SSmartWatchDeviceSystemInfo{
         return self.systemInfo
     }
-    
     
     func wearOn() -> Void {
         print("wear \(self.productName) on \(self.wearBody)")
@@ -212,8 +198,7 @@ class CSmartWatch: PElectronicDevice, PWearableDevice {
     func observer() -> Void {
         print("\(self.productName) is not ready to observer!")
     }
-    
-    
+
     func toString() -> String {
         return "product: \(self.productName)\n"
             + "id: \(self.productId)\n"
@@ -239,8 +224,8 @@ class CAppleWatch: CSmartWatch {
         super.init(productName: productName, productId: productId, systemInfo: systemInfo, power: power, weight: weight, wearBody: wearBody)
     }
     override func observer() {
-        print("now time is 2019/3/2 19:25 form apple watch")
-    }
+    print("now time is 2019/3/2 19:25 form apple watch")
+}
 }
 
 
@@ -289,8 +274,12 @@ let huaweiWatch = CHuaweiWatch(productName: "huawei watch", productId: 2459277, 
 
 let smartWatches: [CSmartWatch] = [appleWatch, huaweiWatch]
 
+iphone7Device.powerOn()
+macbookproDevice.powerOn()
 print(iphone7Device.toString())
 print(macbookproDevice.toString())
+iphone7Device.powerOff()
+macbookproDevice.powerOff()
 print("\n")
 
 for watch in smartWatches {
